@@ -1,0 +1,47 @@
+<Config>
+    <Oracle>
+	    <User>tapm</User>
+     	<Pass>tapm263</Pass>
+    	<Sid>192.168.188.16:1521/orcl</Sid>
+    </Oracle>
+
+    <CMS>
+        <ip>127.0.0.1</ip>
+        <port>10101</port>
+        <file_store_path>/home/tapmcms/cms-data/</file_store_path>
+    </CMS>
+
+    <DistributeFilePath>/tmp/</DistributeFilePath>
+
+    <LogFile>/var/log/distribute.log</LogFile>
+
+	<BlackListServer>
+		<Item id="1">
+			<profile_id>1</profile_id>
+			<memserver>
+				<mem id="main">
+					<sid>1_192.168.188.16</sid>
+					<ip_port>192.168.188.16:14001</ip_port>
+				</mem>
+				<mem id="backup">	
+					<sid>1_192.168.188.16</sid>
+					<ip_port>192.168.188.16:14003</ip_port>
+				</mem>
+			</memserver>
+		</Item>
+		<Item id="2">
+			<profile_id>3</profile_id>
+			<memserver>
+				<mem id="main">
+					<sid>1_192.168.188.16</sid>
+					<ip_port>192.168.188.16:14002</ip_port>
+				</mem>
+				<mem id="backup">	
+					<sid>1_192.168.188.16</sid>
+					<ip_port>192.168.188.16:14004</ip_port>
+				</mem>
+			</memserver>
+		</Item>
+	</BlackListServer>
+
+</Config>

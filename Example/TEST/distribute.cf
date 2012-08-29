@@ -1,0 +1,17 @@
+<Config>
+    <Oracle>
+	    <User>tapm</User>
+     	<Pass>tapm263</Pass>
+    	<Sid>192.168.188.16:1521/orcl</Sid>
+    </Oracle>
+
+    <CMS>
+        <ip>192.168.188.16</ip>
+        <port>10101</port>
+        <file_store_path>/home/xueming.li/Messenger/Example/CMS/cms-data/</file_store_path>
+    </CMS>
+
+    <DistributeFilePath>/home/tapm/bussiness/tapconfigfile/</DistributeFilePath>
+
+    <LogFile>/var/log/test.log</LogFile>
+</Config>

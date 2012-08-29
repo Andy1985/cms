@@ -1,0 +1,72 @@
+#!/bin/bash
+
+##---------the config may read from conf file--
+IDS_PATH="."
+IDS_CMD="tap-ids-messenger"
+IDS_EXEC="${IDS_PATH}/${IDS_CMD}"
+IP_TO_CMS="192.168.188.16"
+#IP_TO_CMS="211.157.225.125"
+PORT_TO_CMS="10102"
+FILE_TRANSFER_PATH="./ids-data/"
+IDS_CONF="./ids.conf"
+LOG_FILE="./ids.log"
+SID="2_192.168.188.16" ##the id of ids
+
+##----------functions--------------------------
+
+__Usage()
+{
+	echo "Usage: $1 [start|stop|restart|status]"
+}
+
+__start()
+{
+	killall -0 -q ${IDS_CMD}
+	[ $? -eq 0 ] && { echo "${IDS_CMD} is already running,exit!"; exit; }
+
+	echo "[`date +'%Y-%m-%d %H:%M:%S'`] starting ${IDS_CMD} ......" |tee -a ${LOG_FILE}
+	${IDS_EXEC} ${SID} ${IP_TO_CMS} ${PORT_TO_CMS} ${FILE_TRANSFER_PATH} ${IDS_CONF} >>${LOG_FILE} 2>&1 &
+	sleep 1
+	__check
+}
+
+__stop()
+{
+	echo "[`date +'%Y-%m-%d %H:%M:%S'`] stopping ${IDS_CMD} ......" |tee -a ${LOG_FILE}
+	killall -9  ${IDS_CMD}
+	sleep 1
+	__check
+}
+
+__restart()
+{
+	__stop
+	__start	
+}
+
+__check()
+{
+	killall -0 -q ${IDS_CMD}
+	if [ $? -eq 0 ];then
+		echo "${IDS_CMD} is running......"
+	else
+		echo "${IDS_CMD} is stopped."
+	fi
+}
+
+##---------main--------------------------------
+case $1 in
+	"start")
+		__start ;;
+	"stop")
+		__stop ;;
+	"restart")
+		__restart ;;
+	"status"|"stat")
+		__check ;;
+	"show")
+		ps -ef|grep "$IDS_CMD" |grep -v "grep"
+		;;
+	*)	
+		__Usage $0 ;;
+esac

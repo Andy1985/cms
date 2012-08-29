@@ -1,0 +1,71 @@
+#!/bin/bash
+
+##---------the config may read from conf file--
+CMS_PATH="."
+CMS_CMD="tap-cms-messenger"
+CMS_EXEC="${CMS_PATH}/${CMS_CMD}"
+PEM="cms.pem"
+PORT_FOR_WEB="10101"
+PORT_FOR_IDS="10102"
+FILE_TRANSFER_PATH="./cms-data/"
+WEB_IP_LIST="iplist.txt"
+LOG_FILE="./cms.log"
+
+##----------functions--------------------------
+
+__Usage()
+{
+	echo "Usage: $1 [start|stop|restart|status]"
+}
+
+__start()
+{
+	killall -0 -q ${CMS_CMD}
+	[ $? -eq 0 ] && { echo "${CMS_CMD} is already running,exit!"; exit; }
+
+	echo "[`date +'%Y-%m-%d %H:%M:%S'`] starting ${CMS_CMD} ......" |tee -a ${LOG_FILE}
+	${CMS_EXEC} ${PEM} ${PORT_FOR_WEB} ${PORT_FOR_IDS} ${WEB_IP_LIST} ${FILE_TRANSFER_PATH} >>${LOG_FILE} 2>&1 &
+	sleep 1
+	__check
+}
+
+__stop()
+{
+	echo "[`date +'%Y-%m-%d %H:%M:%S'`] stopping ${CMS_CMD} ......"|tee -a ${LOG_FILE}
+	killall -9  ${CMS_CMD}
+	sleep 1
+	__check
+}
+
+__restart()
+{
+	__stop
+	__start	
+}
+
+__check()
+{
+	killall -0 -q ${CMS_CMD}
+	if [ $? -eq 0 ];then
+		echo "${CMS_CMD} is running......"
+	else
+		echo "${CMS_CMD} is stopped."
+	fi
+}
+
+##---------main--------------------------------
+case $1 in
+	"start")
+		__start ;;
+	"stop")
+		__stop ;;
+	"restart")
+		__restart ;;
+	"status"|"stat")
+		__check ;;
+    "show")
+        ps -ef|grep "$CMS_CMD" |grep -v "grep"
+        ;;
+	*)	
+		__Usage $0 ;;
+esac

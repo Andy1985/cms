@@ -1,0 +1,24 @@
+// Common.h
+#ifndef __COMMON_H__
+#define __COMMON_H__
+///////////////////////////////////////////////////////////////////////////
+#include <string>
+///////////////////////////////////////////////////////////////////////////
+
+const char SYMBOL[] = { 'N', 'e', 't', 'P', 'o', 'w', 'e', 'r' };
+
+///////////////////////////////////////////////////////////////////////////
+
+class AutoDeleteFile
+{
+private:
+	std::string filename_;
+public:
+	explicit AutoDeleteFile(const std::string& filename) : filename_(filename) { }
+	~AutoDeleteFile() { if ( ! filename_.empty()) unlink(filename_.c_str()); }
+	void CancelDelete() { filename_.clear(); }
+};
+
+///////////////////////////////////////////////////////////////////////////
+#endif//__COMMON_H__
+

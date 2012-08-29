@@ -1,0 +1,460 @@
+[2011-08-23 11:14:45] stopping tap-ids-messenger ......
+[2011-08-23 11:14:46] starting tap-ids-messenger ......
+NetPower IDS-Messenger v1.0.0
+
+ID of this IDS        : 2_192.168.188.16
+CMS host & port       : 192.168.188.16:10102
+Transfer folder       : ./ids-data/
+Script configure file : ./ids.conf
+
+All 7 rule(s) loaded.
+IDS Connected to CMS!
+Send ID '2_192.168.188.16' OK!
+File (77245 bytes) received.
+Run script:
+CopyFile
+type:101
+filename:2
+  param: type => 101
+  param: filename => 2
+ Replace filename => 2
+ Replace type => 101
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 101 2
+/home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh: line 23: postmap: command not found
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+File (77245 bytes) received.
+Run script:
+CopyFile
+type:101
+filename:2
+  param: type => 101
+  param: filename => 2
+ Replace filename => 2
+ Replace type => 101
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 101 2
+/home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh: line 23: postmap: command not found
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+File (77245 bytes) received.
+Run script:
+CopyFile
+type:101
+filename:2
+  param: type => 101
+  param: filename => 2
+ Replace filename => 2
+ Replace type => 101
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 101 2
+postmap: fatal: open ip_tapd_client_restrictions: No such file or directory
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+File (77245 bytes) received.
+Run script:
+CopyFile
+type:101
+filename:2
+  param: type => 101
+  param: filename => 2
+ Replace filename => 2
+ Replace type => 101
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 101 2
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+File (77245 bytes) received.
+Run script:
+CopyFile
+type:101
+filename:2
+  param: type => 101
+  param: filename => 2
+ Replace filename => 2
+ Replace type => 101
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 101 2
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "69.6.40.203"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "221.12.118.67"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "221.12.118.67"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "219.157.71.58"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.252"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "201.135.26.31"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "201.135.26.31"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.252"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.251"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.252"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.157.215.10"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.157.215.10"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.22.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.22.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.133.207.163"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.133.207.163"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.167.93.44"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.116"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.109.14.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.109.14.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.135.152.194"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.106.184.232"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.106.184.232"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.30.108.122"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.30.108.122"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "220.181.26.195"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.44.77"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.44.78"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.140.60.63"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "157.78.36.253"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "210.158.211.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "210.158.211.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "205.183.255.163"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "206.51.26.185"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "213.235.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "213.235.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "84.164.143.18"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "38.113.1.38"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "38.113.1.38"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.44.189.43"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.37.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "220.189.213.3"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.34"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.42"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.48"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "153.2.234.220"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.35.144/28"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.35.160/27"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.35.192/26"
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+File (77245 bytes) received.
+Run script:
+CopyFile
+type:101
+filename:2
+  param: type => 101
+  param: filename => 2
+ Replace filename => 2
+ Replace type => 101
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 101 2
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "69.6.40.203"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "221.12.118.67"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "221.12.118.67"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "219.157.71.58"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.252"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "201.135.26.31"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "201.135.26.31"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.252"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.251"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.252"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.157.215.10"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.157.215.10"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.22.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.22.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.133.207.163"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.133.207.163"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.167.93.44"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.116"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.109.14.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.109.14.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.135.152.194"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.106.184.232"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.106.184.232"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.30.108.122"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.30.108.122"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "220.181.26.195"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.44.77"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.44.78"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.140.60.63"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "157.78.36.253"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "210.158.211.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "210.158.211.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "205.183.255.163"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "206.51.26.185"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "213.235.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "213.235.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "84.164.143.18"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "38.113.1.38"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "38.113.1.38"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.44.189.43"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.37.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "220.189.213.3"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.34"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.42"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.48"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "153.2.234.220"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.35.144/28"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.35.160/27"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.35.192/26"
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+File (77245 bytes) received.
+Run script:
+CopyFile
+type:101
+filename:2
+  param: type => 101
+  param: filename => 2
+ Replace filename => 2
+ Replace type => 101
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 101 2
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "69.6.40.203"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "221.12.118.67"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "221.12.118.67"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "219.157.71.58"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.252"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "201.135.26.31"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "201.135.26.31"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.252"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.251"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.6.252"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.157.215.10"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.157.215.10"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.22.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.22.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.133.207.163"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.133.207.163"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.167.93.44"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.116"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.109.14.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.109.14.30"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.135.152.194"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.106.184.232"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.106.184.232"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.30.108.122"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.30.108.122"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "220.181.26.195"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "216.103.15.36"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.44.77"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.44.78"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "61.140.60.63"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "157.78.36.253"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "210.158.211.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "210.158.211.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "205.183.255.163"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "206.51.26.185"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "213.235.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "213.235.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "84.164.143.18"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "38.113.1.38"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "38.113.1.38"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "218.44.189.43"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.37.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "220.189.213.3"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.33"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.34"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.42"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.96.216.48"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "153.2.234.220"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "211.100.8.88"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.35.144/28"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.35.160/27"
+postmap: warning: ip_tapd_client_restrictions.db: duplicate entry: "202.108.35.192/26"
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+Command Data (9 bytes) received.
+Run script:
+TapReload
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Send back data (37 bytes).
+{"error":1,"message":"","result":{}}
+
+File (30 bytes) received.
+Run script:
+CopyFile
+type:5
+filename:2
+  param: type => 5
+  param: filename => 2
+ Replace filename => 2
+ Replace type => 5
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 5 2
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+Command Data (9 bytes) received.
+Run script:
+TapReload
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Send back data (37 bytes).
+{"error":1,"message":"","result":{}}
+
+File (30 bytes) received.
+Run script:
+CopyFile
+type:5
+filename:2
+  param: type => 5
+  param: filename => 2
+ Replace filename => 2
+ Replace type => 5
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 5 2
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+Command Data (9 bytes) received.
+Run script:
+TapReload
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Send back data (37 bytes).
+{"error":0,"message":"","result":{}}
+
+File (30 bytes) received.
+Run script:
+CopyFile
+type:5
+filename:2
+  param: type => 5
+  param: filename => 2
+ Replace filename => 2
+ Replace type => 5
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 5 2
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+Command Data (9 bytes) received.
+Run script:
+TapReload
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Send back data (37 bytes).
+{"error":0,"message":"","result":{}}
+
+File (30 bytes) received.
+Run script:
+CopyFile
+type:5
+filename:3
+  param: type => 5
+  param: filename => 3
+ Replace filename => 3
+ Replace type => 5
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 5 3
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+Command Data (9 bytes) received.
+Run script:
+TapReload
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Send back data (37 bytes).
+{"error":0,"message":"","result":{}}
+
+File (56 bytes) received.
+Run script:
+CopyFile
+type:5
+filename:4
+  param: type => 5
+  param: filename => 4
+ Replace filename => 4
+ Replace type => 5
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 5 4
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+Command Data (9 bytes) received.
+Run script:
+TapReload
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Send back data (37 bytes).
+{"error":0,"message":"","result":{}}
+
+File (56 bytes) received.
+Run script:
+CopyFile
+type:5
+filename:5
+  param: type => 5
+  param: filename => 5
+ Replace filename => 5
+ Replace type => 5
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 5 5
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+Command Data (9 bytes) received.
+Run script:
+TapReload
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Send back data (37 bytes).
+{"error":0,"message":"","result":{}}
+
+File (56 bytes) received.
+Run script:
+CopyFile
+type:5
+filename:6
+  param: type => 5
+  param: filename => 6
+ Replace filename => 6
+ Replace type => 5
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh $(type) $(filename)
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/copy_file.sh 5 6
+{"error":0,"message":"","result":"OK"}
+Send back data (39 bytes).
+{"error":0,"message":"","result":"OK"}
+
+Command Data (9 bytes) received.
+Run script:
+TapReload
+Call: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Run: /home/xueming.li/Messenger/Example/IDS/scripts/tap_reload.sh
+Send back data (37 bytes).
+{"error":0,"message":"","result":{}}
+

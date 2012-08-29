@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# Filename for saving options
+FILENAME=Makefile.option
+
+# Load default options
+DEFAULT_CONFIG=Debug
+DEFAULT_OPENSSL_DIR=
+if [ -f $FILENAME ];
+then
+	DEFAULT_CONFIG=`cat $FILENAME | grep 'CONFIG\s*=\s*' | sed s'/^CONFIG\s*=\s*\(.*\)\s*$/\1/g'`
+	DEFAULT_OPENSSL_DIR=`cat $FILENAME | grep 'OPENSSL_DIR\s*=\s*' | sed s'/^OPENSSL_DIR\s*=\s*\(.*\)\s*$/\1/g'`
+fi
+
+# Choose options
+while true;
+do
+	echo -en "1) Debug\n2) Release\nChoose [$DEFAULT_CONFIG]:"
+	read CONFIG
+	[ "$CONFIG" = "" ] && CONFIG=$DEFAULT_CONFIG
+	[ "$CONFIG" = "1" ] && CONFIG=Debug && break
+	[ "$CONFIG" = "2" ] && CONFIG=Release && break
+	[ "$CONFIG" = "Debug" ] && break
+	[ "$CONFIG" = "Release" ] && break
+done
+
+# Check openssl path
+OPENSSL_DIR=$DEFAULT_OPENSSL_DIR
+while true;
+do
+	echo -e "#include <openssl/ssl.h>\nint main() { SSL_library_init(); return 0; }" > dummy.c
+	if [ "$OPENSSL_DIR" = "" ];
+	then
+		gcc dummy.c 2>&1 1> /dev/null
+	else
+		gcc -I$OPENSSL_DIR/include/ -L$OPENSSL_DIR/lib/ dummy.c -lssl -lcrypto -ldl
+	fi
+
+	if [ $? -eq 0 ];
+	then
+		rm -f dummy.c a.out
+		break
+	else
+		echo -en "Input openssl directory:"
+		read OPENSSL_DIR
+	fi
+done
+
+# Write options
+cat << EOF > $FILENAME
+CONFIG=$CONFIG
+OPENSSL_DIR=$OPENSSL_DIR
+EOF
+

@@ -1,0 +1,16 @@
+#type|name|path|version
+101|ip_tapd_client_restrictions|/home/gatewaypostfix/etc/postfix|2
+102|sender_tapd_auth_restrictions|/home/gatewaypostfix/etc/postfix|1
+104|ip_tapd_recipient_restrictions|/home/gatewaypostfix/etc/postfix|1
+105|ip_tapd_end_of_data_restrictions|/home/gatewaypostfix/etc/postfix|1
+202|sender_tapd_auth_restrictions|/home/gatewaypostfix/etc/postfix|1
+203|sender_tapd_sender_restrictions|/home/gatewaypostfix/etc/postfix|1
+204|sender_tapd_recipient_restrictions|/home/gatewaypostfix/etc/postfix|1
+205|sender_tapd_end_of_data_restrictions|/home/gatewaypostfix/etc/postfix|1
+3|TAP_WHITELIST_IP|/home/gatewaypostfix/etc/postfix|1
+4|TAP_WHITELIST_SENDER|/home/gatewaypostfix/etc/postfix|1
+5|TAP_BLACKLIST_IP|/home/gatewaypostfix/etc/postfix|6
+6|TAP_BLACKLIST_SENDER|/home/gatewaypostfix/etc/postfix|1
+7|keyscheck.l|/home/gatewaypostfix/etc/postfix|1
+8|TAP_BLACKLIST_SENDER_DOMAIN|/home/gatewaypostfix/etc/postfix|1
+9|TAP_WHITELIST_CHECKSENDER|/home/gatewaypostfix/etc/postfix|1
